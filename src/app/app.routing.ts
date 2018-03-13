@@ -32,7 +32,8 @@ const routes:Routes=[{path:'',
                                         path:'feedback',
                                            component:FeedbackComponent,
                                            
-                                     }]
+                                     },
+                                     {path:'home',redirectTo:''}]
                         }
                         
                      ]
