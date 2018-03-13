@@ -5,13 +5,7 @@ import {DataService} from '../dataservice'
   templateUrl: './landing.component.html',
   styleUrls: ['./landing.component.css']
 })
-export class LandingComponent implements OnInit {
-responseArray={};
-columns=['ID','Name','Email'];
-  constructor(private datObj:DataService) { }
+export class LandingComponent {
 
-  ngOnInit() {
-    this.datObj.getData().subscribe(res=>{this.responseArray=res;console.log("type is"+typeof(res))});
-  }
 
 }

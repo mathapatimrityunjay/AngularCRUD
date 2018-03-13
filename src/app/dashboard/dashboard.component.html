@@ -1,3 +1,28 @@
-<p>
-  dashboard works!
-</p>
+<div class="content">
+    
+  <div class="table-responsive">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th *ngFor="let col of columns">
+                        {{col}}
+                    </th>
+                    
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let person of responseArray">
+                    <td>
+                        {{person.id}}
+                    </td>
+                    <td>
+                        {{person.username}}
+                    </td>
+                    <td>
+                        {{person.email}}
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+</div></div>
