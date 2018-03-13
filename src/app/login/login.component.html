@@ -1,0 +1,20 @@
+
+<div class="container" style="text-align: center;padding:10%;background-color: lightblue;height:500px;">
+
+    <div style="background: #acacac;border-radius: 5%;height: 150px">
+      <br>
+       <div> 
+      <label for="username">Username</label>
+       <input type="text" #username />
+       </div><br>
+       <div>
+       <label for="password">Password</label>
+       <input type="password" #password />
+       </div><br>
+       <div>
+       <button type="submit" (click)="doLogin(username.value,password.value)">Login</button>
+    </div>
+    </div>
+    
+ 
+</div>
